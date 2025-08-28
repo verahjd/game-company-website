@@ -1,0 +1,114 @@
+:root {
+    --blue-900: #1f3b6e;
+    --blue-800: #2a4d8f;
+    --blue-700: #355fae;
+    --blue-600: #3f72cf;
+    --indigo-100: #1e2a5a;
+    --slate-900: #0b1220;
+    --slate-800: #111827;
+    --slate-600: #475569;
+    --white: #ffffff;
+
+    --radius: 14px;
+    --radius-sm: 10px;
+    --container: 1120px;
+    --shadow-1: 0 10px 30px rgba(0, 0, 0, 0.8);
+}
+
+*,
+*::before,
+*::after {box-sizing: border-box;}
+
+html, body {
+    margin: 0;
+    font-family: system-ui, -apple-system, Segeo UI, Roboto, Ubuntu, sans-serif;
+    color: var(--slate-800);
+    background: var(--indigo-100);
+    line-height: 1.6;
+}
+
+/*Centered max-width wrapper used everywhere*/
+.container {
+    width: min(100% - 2rem, var(--container));
+    margin-inline: auto;
+}
+
+/*Reausable section spacing*/
+.section {
+    padding: 64px 0; 
+    background: var(--white);
+}
+.section--alt{
+    background: var(--white);
+}
+
+/*Section header block*/
+.section__header { text-align: center; max-width: 760px; margin: 0 auto 2rem; }
+.section__header h2 { margin: 0; color: var(--slate-800); }
+.section__header h2 span { color: var(--blue-700); }
+.section__header p { color: var(--slate-600); margin: .75rem 0 1rem; }
+
+/* Buttons */
+.btn {
+  display: inline-block;
+  border: 1px solid var(--blue-700);
+  color: var(--blue-700);
+  background: transparent;
+  padding: .65rem 1rem;
+  border-radius: var(--radius-sm);
+  text-decoration: none;
+  font-weight: 600;
+}
+.btn:hover { background: #eaf1ff; }
+.btn--primary { background: var(--blue-700); color: var(--white); border-color: var(--blue-700); }
+.btn--primary:hover { background: var(--blue-600); }
+
+.site-header {
+  position: sticky;       /* stick to top when scrolling */
+  top: 0;
+  background: rgba(255,255,255,0.9);  /* translucent white */
+  backdrop-filter: saturate(120%) blur(6px); /* frosted glass look */
+  box-shadow: 0 1px 0 rgba(0,0,0,.06); /* subtle line */
+  z-index: 50;            /* keep it on top of other stuff */
+}
+
+.header__inner {
+  display: flex;                /* arrange children in a row */
+  align-items: center;          /* vertically center them */
+  justify-content: space-between; /* push logo left, nav right */
+  padding: .75rem 0;            /* vertical spacing */
+}
+
+.brand {
+  font-weight: 800;             /* bold logo text */
+  font-size: 1.25rem;
+  color: var(--blue-800);
+  text-decoration: none;        /* remove underline */
+  letter-spacing: .5px;
+}
+
+.brand span {
+  color: var(--blue-600);       /* different color for PAGE */
+}
+
+.nav {
+  list-style: none;             /* remove default bullets */
+  display: flex;                /* make it horizontal */
+  gap: 1.25rem;                 /* space between items */
+  margin: 0;
+  padding: 0;
+}
+
+.nav a {
+  text-decoration: none;
+  color: #334155;               /* dark gray text */
+  font-weight: 600;
+  padding: .35rem .5rem;        /* clickable area */
+  border-radius: 8px;           /* rounded hover highlight */
+}
+
+.nav a:hover,
+.nav a.is-active {
+  color: var(--blue-700);       /* text turns blue */
+  background: #eaf1ff;          /* light blue highlight */
+}
