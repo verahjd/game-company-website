@@ -21,7 +21,7 @@
 
 html, body {
     margin: 0;
-    font-family: system-ui, -apple-system, Segeo UI, Roboto, Ubuntu, sans-serif;
+    font-family: 'Poppins', sans-serif;
     color: var(--slate-800);
     background: var(--indigo-100);
     line-height: 1.6;
@@ -51,17 +51,16 @@ html, body {
 /* Buttons */
 .btn {
   display: inline-block;
-  border: 1px solid var(--blue-700);
   color: var(--blue-700);
   background: transparent;
-  padding: .65rem 1rem;
-  border-radius: var(--radius-sm);
+  padding: .5rem 1.25rem;
+  border-radius: 25px;
   text-decoration: none;
   font-weight: 600;
 }
 .btn:hover { background: #eaf1ff; }
-.btn--primary { background: var(--blue-700); color: var(--white); border-color: var(--blue-700); }
-.btn--primary:hover { background: var(--blue-600); }
+.btn--primary { background: var(--white); color: var(--blue-600); border-color: var(--blue-700); }
+.btn--primary:hover { background: fcfcfc; }
 
 .site-header {
   position: sticky;       /* stick to top when scrolling */
@@ -79,16 +78,10 @@ html, body {
   padding: .75rem 0;            /* vertical spacing */
 }
 
-.brand {
-  font-weight: 800;             /* bold logo text */
-  font-size: 1.25rem;
-  color: var(--blue-800);
-  text-decoration: none;        /* remove underline */
-  letter-spacing: .5px;
-}
-
-.brand span {
-  color: var(--blue-600);       /* different color for PAGE */
+.brand img {
+  height: 40px;   
+  width: auto;    /* keeps aspect ratio */
+  display: block; /* removes inline spacing */
 }
 
 .nav {
@@ -109,8 +102,8 @@ html, body {
 
 .nav a:hover,
 .nav a.is-active {
+  text-decoration: underline; /* underline on hover */
   color: var(--blue-700);       /* text turns blue */
-  background: #eaf1ff;          /* light blue highlight */
 }
 
 .hero {
@@ -140,7 +133,13 @@ html, body {
 }
 
 .hero__title {
-  font-size: clamp(2rem, 5vw, 3rem);
+  font-size: 4rem;
+  line-height: 1;
   text-shadow: 0 2px 8px rgba(0,0,0,.25);
 }
 
+.hero__subtitle {
+  font-size: 1.5rem;
+  margin: 0 0 25px 0;
+  text-shadow: 0 2px 8px rgba(0,0,0,.25);
+}
