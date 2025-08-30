@@ -1,19 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kapikum Games | Your "Game Dev" guide! </title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Kapikum Games | Your "Game Dev" Guide!</title>
 
-    <link rel="stylesheet" href="styles.css"/>
-    <link rel="icon" href="favicon.png">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+  <!-- CSS + Font + Favicon -->
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="icon" href="favicon.png" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;800&display=swap" rel="stylesheet" />
 </head>
 <body>
+
+  <!-- ================= Header ================= -->
   <header class="site-header">
     <div class="container header__inner">
-      <a class="brand" href="#">
-        <img src="logo.png" alt="Kapikum Games Logo">
+      <a class="brand" href="#home" aria-label="Kapikum Games">
+        <!-- Replace src with your logo path -->
+        <img src="logo.png" alt="Kapikum Games Logo" />
       </a>
 
       <nav aria-label="Primary">
@@ -28,74 +32,142 @@
     </div>
   </header>
 
-  <section id ="hero" class="hero">
+  <!-- ================= Hero ================= -->
+  <section id="home" class="hero">
     <div class="hero__overlay"></div>
-    <div class="container hero__content">
+    <div class="container hero__content" role="region" aria-label="Intro">
       <h1 class="hero__title">Welcome to Kapikum Games</h1>
-      <p class="hero__subtitle">Our mission is to craft games that 
-        connect people through shared adventures, meaningful choices, 
-        and worlds that feel alive long after the screen goes dark
+      <p class="hero__subtitle">
+        Our mission is to craft games that connect people through shared adventures, meaningful choices,
+        and worlds that feel alive long after the screen goes dark.
       </p>
       <a class="btn btn--primary" href="#about">GET STARTED</a>
     </div>
   </section>
 
-  <section id="about" class="about">
-    <div class="container about__content">
-      <h2 class="about__title">About Us</h2>
-      <p class="about__text">
-        KapiKum Games is an independent game development studio proudly based in Baguio City, Philippines. 
-        Founded with a passion for storytelling and creativity, we specialize in building role-playing games 
-        that immerse players in richly crafted worlds, meaningful choices, and unforgettable adventures. Our 
-        team combines local talent, cultural inspiration, and modern development practices to deliver 
-        experiences that feel both fresh and globally competitive. At KapiKum, we believe games are more than 
-        entertainment—they are opportunities to connect, to imagine, and to explore new perspectives. With every 
-        title we create, we aim to put Philippine creativity on the world stage, while staying true to our roots 
-        here in the City of Pines.
-      </p>
-      <a class="btn btn--primary" href="#services">KNOW OUR SERVICES</a>
+  <!-- ================= About ================= -->
+  <section id="about" class="section">
+    <div class="container">
+      <header class="section__header">
+        <h2>About <span>Us</span></h2>
+      </header>
+
+      <div class="about__content">
+        <p class="about__text">
+          KapiKum Games is an independent game development studio proudly based in Baguio City, Philippines.
+          We specialize in role-playing games that immerse players in richly crafted worlds with meaningful choices.
+          Our team blends local talent, cultural inspiration, and modern dev practices to deliver experiences that
+          feel fresh and globally competitive.
+        </p>
+        <a class="btn" href="#services">KNOW OUR SERVICES</a>
+      </div>
     </div>
   </section>
 
+  <!-- ============ Story / Mission / Vision strip ============ -->
   <section class="strip">
     <div class="container strip__grid">
       <article class="card">
         <div class="card__icon">
-          <img src="assets/story.png" alt="Story Icon">
+          <img src="assets/story.png" alt="Our Story icon" />
         </div>
         <h3 class="card__title">Our Story</h3>
         <p class="card__text">
-          Founded in 2020 by a group of passionate game developers, KapiKum Games started as a small indie studio 
-          with a big dream: to draw inspiration from the rich cultural heritage of the Philippines and the vibrant gaming community 
-          in Baguio City.
+          Founded in 2020 by a small indie crew with a big dream—to put Philippine creativity onto the world stage.
         </p>
       </article>
 
-      <article class="card">
+      <article class="card card--dark">
         <div class="card__icon">
-          <img src="assets/vision.png" alt="Vision Icon">
-        </div>
-        <h3 class="card__title">Our Vision</h3>
-        <p class="card__text">
-          Founded in 2020 by a group of passionate game developers, KapiKum Games started as a small indie studio 
-          with a big dream: to draw inspiration from the rich cultural heritage of the Philippines and the vibrant gaming community 
-          in Baguio City.
-        </p>
-      </article>
-
-      <article class="card">
-        <div class="card__icon">
-          <img src="assets/mission.png" alt="Mission Icon">
+          <img src="assets/mission.png" alt="Our Mission icon" />
         </div>
         <h3 class="card__title">Our Mission</h3>
         <p class="card__text">
-          Founded in 2020 by a group of passionate game developers, KapiKum Games started as a small indie studio 
-          with a big dream: to draw inspiration from the rich cultural heritage of the Philippines and the vibrant gaming community 
-          in Baguio City.
+          Craft games that connect people through shared adventures and thoughtful choices.
+        </p>
+      </article>
+
+      <article class="card">
+        <div class="card__icon">
+          <img src="assets/vision.png" alt="Our Vision icon" />
+        </div>
+        <h3 class="card__title">Our Vision</h3>
+        <p class="card__text">
+          Become a globally recognized studio while staying rooted in the City of Pines.
         </p>
       </article>
     </div>
   </section>
+
+  <!-- ================= Services ================= -->
+  <section id="services" class="section section--alt">
+    <div class="container">
+      <header class="section__header">
+        <h2>Our <span>Services</span></h2>
+        <p>From concept to launch, we ship cohesive, player-focused experiences.</p>
+      </header>
+
+      <div class="services">
+        <article class="service"><div class="service__icon">🎮</div><h4 class="service__title">Game Design</h4></article>
+        <article class="service"><div class="service__icon">🧱</div><h4 class="service__title">Gameplay Systems</h4></article>
+        <article class="service"><div class="service__icon">🖼️</div><h4 class="service__title">Art &amp; UI</h4></article>
+        <article class="service"><div class="service__icon">🎵</div><h4 class="service__title">Audio &amp; Music</h4></article>
+        <article class="service"><div class="service__icon">🧪</div><h4 class="service__title">QA &amp; Playtesting</h4></article>
+        <article class="service"><div class="service__icon">☁️</div><h4 class="service__title">Backend/Live Ops</h4></article>
+        <article class="service"><div class="service__icon">📱</div><h4 class="service__title">Mobile Ports</h4></article>
+        <article class="service"><div class="service__icon">🖥️</div><h4 class="service__title">PC Builds</h4></article>
+        <article class="service"><div class="service__icon">🚀</div><h4 class="service__title">Launch Support</h4></article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= Stats band ================= -->
+  <section class="stats">
+    <div class="container stats__grid">
+      <div class="stat"><div class="stat__icon">📅</div><div class="stat__value">2024</div><div class="stat__label">Year Founded</div></div>
+      <div class="stat"><div class="stat__icon">✅</div><div class="stat__value">3</div><div class="stat__label">Projects</div></div>
+      <div class="stat"><div class="stat__icon">👥</div><div class="stat__value">5</div><div class="stat__label">Team Members</div></div>
+      <div class="stat"><div class="stat__icon">🏆</div><div class="stat__value">3</div><div class="stat__label">Competitions</div></div>
+    </div>
+  </section>
+
+  <!-- ================= Portfolio ================= -->
+  <section id="portfolio" class="section section--alt">
+    <div class="container">
+      <header class="section__header">
+        <h2>Our <span>Portfolio</span></h2>
+        <p>Recent work across platforms.</p>
+      </header>
+
+      <div class="gallery">
+        <!-- Replace with your own images -->
+        <img src="assets/port1.jpg" alt="Project 1" loading="lazy" decoding="async" />
+        <img src="assets/port2.jpg" alt="Project 2" loading="lazy" decoding="async" />
+        <img src="assets/port3.jpg" alt="Project 3" loading="lazy" decoding="async" />
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= Testimonial / Contact ================= -->
+  <section id="contact" class="testimonial">
+    <div class="container testimonial__inner">
+      <img class="testimonial__avatar" src="assets/person.jpg" alt="" />
+      <div>
+        <h3 class="testimonial__name">Jhon Chenny Luis</h3>
+        <p class="testimonial__role">Aspiring Game Developer</p>
+        <p class="testimonial__quote">
+          “KapiKum Games delivered beyond expectations—tight gameplay and a polished launch.”
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= Footer ================= -->
+  <footer class="site-footer">
+    <div class="container">
+      <small>© 2025 Kapikum Games. All rights reserved.</small>
+    </div>
+  </footer>
 
 </body>
 </html>
