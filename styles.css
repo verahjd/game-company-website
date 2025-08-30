@@ -59,7 +59,13 @@ html, body {
   font-weight: 600;
 }
 .btn:hover { background: #eaf1ff; }
-.btn--primary { background: var(--white); color: var(--blue-600); border-color: var(--blue-700); }
+.btn--primary { 
+  background: var(--white); 
+  color: var(--blue-600); 
+  border-color: var(--blue-600);
+  border-width: 2px;
+  border-style: solid;
+}
 .btn--primary:hover { background: fcfcfc; }
 
 .site-header {
@@ -157,13 +163,64 @@ html, body {
 }
 
 .about__content {
-  position: relative;
+  position:relative;
   text-align: center;
-  padding: 2rem 0 3rem;
+  padding: 0 0 3rem;
 }
 
 .about__title{
   font-size: 2rem;
   line-height: 1;
   text-shadow: 0 2px 8px rgba(0,0,0,.25);
+}
+
+.about__text{
+  color: var(--slate-600);
+  margin: 0 0 25px 0;
+  text-shadow: 0 2px 8px rgba(0,0,0,.25);
+  text-align: center;
+}
+
+/* card elements */
+.strip{
+  background: var(--white);
+  padding: 0;
+}
+
+.strip__grid{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  overflow: hidden;
+  border-radius: var(--radius);
+  margin-top: -32px
+}
+
+.card{
+  background: var(--blue-600);
+  padding: 2rem 1.25rem;
+  text-align: center;
+}
+
+.card__dark{
+  background: var(--slate-900);
+  color: var(--white);
+}
+
+.card__title{
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin: 0 0 .5rem;
+}
+
+.card__text{
+  font-size: .95rem;
+  color: var(--slate-600);
+  margin: 0 0 1.5rem;
+}
+
+.card__icon img{
+  width: 32px;
+  height: auto;
+  object-fit: contain;
+  display: block;
 }
