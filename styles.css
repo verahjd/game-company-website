@@ -106,6 +106,8 @@ html, body {
   color: var(--blue-700);       /* text turns blue */
 }
 
+
+/* Hero Elements Here */
 .hero {
   position: relative;
   min-height: clamp(420px, 54vw, 560px);
@@ -141,5 +143,27 @@ html, body {
 .hero__subtitle {
   font-size: 1.5rem;
   margin: 0 0 25px 0;
+  text-shadow: 0 2px 8px rgba(0,0,0,.25);
+}
+
+/*About Us Elements Here*/
+.about {
+  position: relative;
+  min-height: clamp(420px, 54vw, 560px);
+  display: grid;
+  place-items: center;
+  color: var(--blue-600);
+  background-color: var(--white);
+}
+
+.about__content {
+  position: relative;
+  text-align: center;
+  padding: 2rem 0 3rem;
+}
+
+.about__title{
+  font-size: 2rem;
+  line-height: 1;
   text-shadow: 0 2px 8px rgba(0,0,0,.25);
 }
