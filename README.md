@@ -21,5 +21,5 @@ It’s a fictional landing page for a game development studio called **Kapikum G
 Clone or download this repository, then open `index.html` in any modern browser:
 
 ```bash
-git clone https://github.com/<your-username>/<your-repo>.git
-cd <your-repo>
+git clone https://github.com/<verahjd>/<game-company-website>.git
+cd <game-company-website>
