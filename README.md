@@ -3,6 +3,8 @@
 This repository contains a **practice project** I built while learning modern web development with **HTML** and **CSS**.  
 It’s a fictional landing page for a game development studio called **Kapikum Games**.  
 
+🔗https://game-company-website-nv4ts442s-verahjds-projects.vercel.app/
+
 ⚠️ **Disclaimer**  
 - All names, text, and information included here are **fictional** and used for learning/demo purposes only.  
 - All images used are sourced from free image providers or placeholders. **I do not own any of the images.** Full credit goes to their respective creators.  
