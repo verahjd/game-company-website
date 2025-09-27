@@ -1,6 +1,6 @@
-# Kapikum Games — Practice Landing Page
+# Kapikum Games; Practice Landing Page
 
-This repository contains a **practice project** I built while learning modern web development with **HTML** and **CSS**.  
+This repository contains a practice project I built while learning modern web development with **HTML** and **CSS**.  
 It’s a fictional landing page for a game development studio called **Kapikum Games**.  
 
 🔗https://game-company-website.vercel.app
@@ -16,12 +16,3 @@ It’s a fictional landing page for a game development studio called **Kapikum G
 - Learn CSS layout techniques with **Flexbox** and **Grid**.  
 - Explore responsive design using **relative units** (`rem`, `vw`, `clamp()`).  
 - Experiment with reusable CSS components (buttons, cards, services grid).  
-
----
-
-## 🚀 How to View
-Clone or download this repository, then open `index.html` in any modern browser:
-
-```bash
-git clone https://github.com/<verahjd>/<game-company-website>.git
-cd <game-company-website>
